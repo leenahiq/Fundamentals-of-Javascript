@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: color #282828;;
+}
+
+.app{
+display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+flex-wrap: wrap;
+
+background-color: #282828;
+border-radius: 10px;
+justify-content: space-evenly;
+align-items:center ;
+}
+
+
+img{display: flex;
+    width: 350px;
+    height:300px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
+}
+.img{
+
+
+color: bisque;
+text-align: center;
+
+}

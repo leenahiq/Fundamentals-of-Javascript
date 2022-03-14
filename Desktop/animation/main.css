@@ -1,0 +1,150 @@
+
+
+*{margin: 0px;
+  padding: 0px;
+
+
+}
+/* background */
+body{
+  background-color: coral;
+  animation-name: wall;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+/* image of codenation  */
+img {
+  width: 193px;
+  height: 200px;
+ margin: 100px;
+
+}
+
+/* wecome code natin set up */
+ .purple{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color: azure;
+  background-color: crimson;
+  animation-name: button;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+  
+}
+.purple a{
+  text-decoration: none;
+  color: azure;
+}
+/* rotating image code */
+.rotate{
+  transition: all 3s ease-in-out;
+}
+
+.rotate:hover{
+  transform: rotate(360deg);
+}
+
+
+
+/* code to keep layout  */
+
+.flex-grid {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+/* back ground and all setings for social */
+.fa {
+
+
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  height:80px;
+  padding-top: 80px ;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  transition: border-radius 2s;
+  transition-timing-function: ease;
+  animation-name: social;
+  animation-duration: 10s;
+  
+}
+
+.fa:hover {
+  border-radius: 50%;
+ 
+
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+
+
+}
+
+@keyframes social {
+  0%     {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
+.fa-twitter {
+background: #55ACEE;
+color: white;
+
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+/* keyframe for button welcome code nation   */
+
+@keyframes button {
+  0% {
+    background-color: aqua;
+    margin-bottom: 20px;
+  }
+  50% {
+    background-color: blue;
+    margin-top: 10px;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+/* keyframes for back ground */
+@keyframes wall {
+  0% {
+    background-color: aqua;
+    
+  }
+  50% {
+    background-color:bisque;
+  
+  }
+  100% {
+    background-color:aquamarine;
+  }
+}
