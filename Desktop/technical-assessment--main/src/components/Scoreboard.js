@@ -42,7 +42,7 @@ function Scoreboard() {
         ) : (
           <>
             <h1>Results</h1>
-            {isComplete == true ? <h2>Counting is completed</h2> : <></>}
+            {isComplete === true ? <h2>Counting is completed</h2> : <></>}
             <Scorecard
               results={results}
               candidateData={candidateData}
