@@ -5,17 +5,18 @@ function Scorecard({ results, candidateData, isCompelete }) {
   const [max, setMax] = useState();
 
   useEffect(() => {
-    const max = results.reduce((acc, student) => {
-      if (acc === null || student.votes > acc) return student.votes;
+    if (!results || results.length === 0) return <div>No results</div>;
+    const max = results.reduce((acc, candidate) => {
+      if (acc === [] || candidate.votes > acc) return candidate.votes;
       return acc;
-    }, null);
+    }, []);
     setMax(max);
     console.log(max);
   }, [results]);
 
-  if (!results || results.length === 0) {
-    return <div>No results</div>;
-  }
+  // if (!results || results.length === 0) {
+  //   return <div>No results</div>;
+  // }
 
   let scores = [];
 
